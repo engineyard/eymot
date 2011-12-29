@@ -7,6 +7,7 @@ new environments.
 Requires
 To use it, you need to have a ~/.fog file with the following contents:
 
+```yaml
 :default:
   :vcloud:
     :ecloud:
@@ -15,4 +16,5 @@ To use it, you need to have a ~/.fog file with the following contents:
       :module: Fog::Vcloud::Terremark::Ecloud
       :username: <your icenter login>
       :password: <your icenter password>
+```
 	
