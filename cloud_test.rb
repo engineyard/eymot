@@ -1,4 +1,4 @@
-require 'bundler/setup'
+
 require 'rubygems'
 require 'fog'
 require 'pp'
@@ -23,11 +23,8 @@ total_overall_disk = 0
 ecloud.vdcs.each do |v|
         puts "Processing #{v.name}..."
         v.servers.each do |s|
-          if s.memory
-            total_slice_memory, units =  s.memory[:amount] , s.memory[:units]
-            puts total_slice_memory
-            puts units
-          end
+          puts s.name
+      
         end
         
 end
