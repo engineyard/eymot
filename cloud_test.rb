@@ -1,4 +1,3 @@
-
 require 'rubygems'
 require 'fog'
 require 'pp'
@@ -23,8 +22,6 @@ total_overall_disk = 0
 ecloud.vdcs.each do |v|
         puts "Processing #{v.name}..."
         v.servers.each do |s|
-          puts s.name
-      
+          puts s.name      
         end
-        
 end
