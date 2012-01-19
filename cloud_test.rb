@@ -25,3 +25,5 @@ ecloud.vdcs.each do |v|
           puts s.name      
         end
 end
+
+ecloud.vdcs.server(tm21-s00016).cpus
