@@ -1,0 +1,7 @@
+--- 
+:mock: mocha
+:script: jquery
+:stylesheet: none
+:test: riot
+:renderer: haml
+:orm: datamapper
