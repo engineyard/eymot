@@ -1,4 +1,5 @@
 source :rubygems
+source "http://geminst:hoa3laml@gems-internal.engineyard.com"
 
 # Server requirements (defaults to WEBrick)
 # gem 'thin'
@@ -7,6 +8,8 @@ source :rubygems
 # Project requirements
 gem 'rake'
 gem 'sinatra-flash', :require => 'sinatra/flash'
+gem 'samurai'
+gem 'httparty'
 
 # Component requirements
 gem 'haml'
