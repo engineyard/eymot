@@ -5,13 +5,6 @@ GEM
     activesupport (3.1.3)
       multi_json (~> 1.0)
     addressable (2.2.6)
-    builder (3.0.0)
-    capistrano (2.9.0)
-      highline
-      net-scp (>= 1.0.0)
-      net-sftp (>= 2.0.0)
-      net-ssh (>= 2.0.14)
-      net-ssh-gateway (>= 1.1.0)
     data_objects (0.10.7)
       addressable (~> 2.1)
     diff-lcs (1.1.3)
@@ -35,15 +28,10 @@ GEM
       dm-core (~> 1.2.0)
     do_sqlite3 (0.10.7)
       data_objects (= 0.10.7)
-    escape (0.0.4)
-    ey_cluster_xml (0.0.25)
-      grit
-    fastthread (1.0.7)
     grit (2.4.1)
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
     haml (3.1.4)
-    highline (1.6.9)
     http_router (0.10.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -51,7 +39,6 @@ GEM
       multi_json
       multi_xml
     i18n (0.6.0)
-    json (1.6.5)
     mail (2.3.0)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -62,14 +49,6 @@ GEM
       metaclass (~> 0.0.1)
     multi_json (1.0.4)
     multi_xml (0.4.1)
-    net-scp (1.0.4)
-      net-ssh (>= 1.99.1)
-    net-sftp (2.0.5)
-      net-ssh (>= 2.0.9)
-    net-ssh (2.3.0)
-    net-ssh-gateway (1.1.0)
-      net-ssh (>= 1.99.1)
-    nokogiri (1.5.0)
     padrino (0.10.5)
       padrino-admin (= 0.10.5)
       padrino-cache (= 0.10.5)
@@ -108,17 +87,7 @@ GEM
     riot (0.12.5)
       rr
     rr (1.0.4)
-    samurai (0.22.139)
-      activesupport (>= 2.3.4)
-      builder
-      capistrano (>= 2.5.3)
-      escape
-      ey_cluster_xml (>= 0.0.20)
-      fastthread (>= 1.0.7)
-      json
-      net-sftp (>= 2.0.2)
-      nokogiri (>= 1.4.2)
-      xml-simple (>= 1.0.12)
+    samurai (0.22.229)
     sinatra (1.3.2)
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
@@ -132,7 +101,6 @@ GEM
       polyglot (>= 0.3.1)
     url_mount (0.2.1)
       rack
-    xml-simple (1.1.1)
 
 PLATFORMS
   ruby
