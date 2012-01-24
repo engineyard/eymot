@@ -1,0 +1,4 @@
+- @title = "Search for company"
+- form_tag '/search', :method => 'get' do
+  %p
+    = text_field_tag :search, :value => params[:search]
