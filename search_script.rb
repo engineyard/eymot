@@ -12,7 +12,10 @@ def eysearch(data)
   regex = /tm\d+-s0+\d+/
   result.to_s.each do |r|
     if regex.match(r)
-      puts regex.match(r)
+      vm = regex.match(r)
+      output = HTTParty.get("http://ec2-50-16-52-4.compute-1.amazonaws.com/vm/#{vm}.json")
+      hash = output.to_hash
+      puts "#{hash["name"]} has RAM: #{hash["ram"]} and DISK: #{hash["disk"]}"
     end
   end
 
@@ -24,11 +27,4 @@ end
 
 data = ["teamsport"]
 
-vm = eysearch(data).regex.match(r)
-output = HTTParty.get("http://ec2-50-16-52-4.compute-1.amazonaws.com/vm/#{vm}.json")
-hash = output.to_hash
-puts hash["name"]
-puts hash["ram"]
-puts hash["disk"]
-
-
+eysearch(data)
